@@ -293,7 +293,7 @@ for movie in movies
     studio_name = Studio.find_by({"id" => studio_id})
   studio = studio_name["name"]
   # display
-  puts "#{title} #{year} #{rating} #{studio}"
+  puts "#{title} | #{year} | #{rating} | #{studio}"
 end
 
 # Prints a header for the cast output
@@ -315,5 +315,5 @@ title = movie_name["title"]
     actor_name = Actor.find_by({"id" => actor_id})
 actor = actor_name["name"]
 role = character["name"]
-  puts "#{title} #{actor} #{role}"
+  puts "#{title} | #{actor} | #{role}"
 end
